@@ -2,7 +2,7 @@
 FROM multiarch/debian-debootstrap:armhf-buster
 
 # Optional, it contains the name of the maintainer of the image.
-#MAINTAINER
+MAINTAINER AlinPascaru (alin.pascaru@gmail.com)
 
 # Used to execute a command during the build process of the docker image.
 RUN
