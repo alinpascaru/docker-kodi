@@ -1,11 +1,13 @@
 # The base image for building a new image. This command must be on top of the dockerfile.
-FROM multiarch/debian-debootstrap:armhf-buster
+FROM arm32v7/debian:latest
+#FROM multiarch/debian-debootstrap:armhf-buster
 
 # Optional, it contains the name of the maintainer of the image.
-#MAINTAINER
+MAINTAINER alinpascaru (alin.pascaru@gmail.com)
 
 # Used to execute a command during the build process of the docker image.
-RUN
+RUN apt-get update -y && apt-get upgrade -y
+RUN sudo apt-get install kodi
 
 # Copy a file from the host machine to the new docker image. There is an option to use a URL for the file, docker will then download that file to the destination directory.
 #ADD
