@@ -60,10 +60,10 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-r
 #      vainfo \
       \
 # cleanup
-&& rm -rf \
-      /tmp/* \
-      /var/lib/apt/lists/* \
-      /var/tmp/*
+#&& rm -rf \
+#      /tmp/* \
+#      /var/lib/apt/lists/* \
+#      /var/tmp/*
 
 # Kodi directories
 #RUN  mkdir -p /config/kodi/userdata >/dev/null 2>&1 || true && rm -rf /root/.kodi && ln -s /config/kodi /root/.kodi \
