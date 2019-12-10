@@ -6,8 +6,8 @@
 
 
 # The base image for building a new image. This command must be on top of the dockerfile.
-FROM balenalib/rpi-raspbian:buster
-#FROM arm32v7/debian:latest
+#FROM balenalib/rpi-raspbian:buster
+FROM arm32v7/debian:latest
 #FROM multiarch/debian-debootstrap:armhf-buster
 
 # Optional, it contains the name of the maintainer of the image.
