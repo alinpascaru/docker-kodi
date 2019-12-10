@@ -14,10 +14,13 @@ FROM balenalib/rpi-raspbian:buster
 MAINTAINER alinpascaru (alin.pascaru@gmail.com)
 
 # Used to execute a command during the build process of the docker image.
-RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-recommends \
+RUN apt-get update && \
+#    apt-get upgrade -y &&
+    apt-get install -y \
+#    --no-install-recommends \
 #      xserver-xorg xinit xserver-xorg-video-fbdev lxde lxde-common xserver-xorg-legacy dbus-x11 \
 #      alsa-base alsa-utils alsa-tools \
-      ca-certificates \
+#      ca-certificates \
 #      coreutils \
 #      dbus-x11 x11-apps x11-xserver-utils \
       kodi
