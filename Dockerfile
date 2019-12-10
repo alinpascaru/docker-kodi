@@ -14,10 +14,6 @@ FROM balenalib/rpi-raspbian:buster
 MAINTAINER alinpascaru (alin.pascaru@gmail.com)
 
 # Used to execute a command during the build process of the docker image.
-RUN apt-get clean && apt-get update && apt-get install -y --no-install-recommends xserver-xorg xinit \
-     fbset libraspberrypi0 alsa-base alsa-utils alsa-tools kodi xserver-xorg-legacy dbus-x11 \
-     && apt-get clean && rm -rf /var/lib/apt/lists/*
-
 RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-recommends \
       xserver-xorg xinit xserver-xorg-video-fbdev lxde lxde-common xserver-xorg-legacy dbus-x11 \
       alsa-base alsa-utils alsa-tools \
