@@ -15,7 +15,7 @@ MAINTAINER alinpascaru (alin.pascaru@gmail.com)
 # Used to execute a command during the build process of the docker image.
 RUN apt-get update && apt-get upgrade -y && apt-get install -y apt-utils
 
-RUN apt-get install -y \
+RUN apt-get install -y --no-install-recommends \
     xserver-xorg xinit xserver-xorg-video-fbdev lxde lxde-common xserver-xorg-legacy dbus-x11 \
     dbus-x11 x11-apps x11-xserver-utils \
     alsa-base alsa-utils alsa-tools \
