@@ -20,7 +20,7 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-r
       ca-certificates \
 #      coreutils \
 #      dbus-x11 x11-apps x11-xserver-utils \
-      kodi 
+      kodi
 #      kodi-inputstream-adaptive \
 #      libass5 \
 #      libass9 \
@@ -58,7 +58,7 @@ RUN apt-get update -y && apt-get upgrade -y && apt-get install -y --no-install-r
 #      software-properties-common \
 #      tzdata \
 #      vainfo \
-      \
+#      \
 # cleanup
 #&& rm -rf \
 #      /tmp/* \
